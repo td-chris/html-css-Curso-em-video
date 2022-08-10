@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 
+  EM HTML class = .
+  EM HTML id = #
+*/
+
+body {
+  background-color: #A9DEC9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #2B5E4B;
+}
+
+h1#principal {
+  text-align: center;
+  background-color: #2B5E4B;
+  color: white;
+}
+
+h2 {
+  color: #4A6158;
+}
+
+.basico {
+  color: #4A6158;
+}
+
+.intermediario {
+  color: #a6a82c;
+}
+
+.avancado {
+  color: #e26343;
+}
+
+.destaque {
+  background-color: #c0c25fda;
+}
