@@ -43,7 +43,75 @@ main {
   padding: 1rem;
 }
 
+h1 {
+  color: #234866;
+  font-size: 2rem;
+}
+
+h2 {
+  background-color: #234866;
+  color: #96C4EA;
+  padding-left: 00.625rem;
+}
+
+p {
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+p > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+p > a::after {
+  content: ' 🔗';
+}
+
 div.center {
   display: flex;
   justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li > a {
+  text-decoration: underline;
+  color: black;
+}
+
+h3 {
+  padding-top: 0.625rem;
+  background-color: #234866;
+  color: white;
+  
+  padding-left: 0.625rem;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+section#extra{
+  background-color: #96C4EA;
+
+  margin: 2rem;
+  border-radius: 0.625rem;
+}
+
+section#extra-content{
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+footer {
+  background-color: #234866;
+  color: white;
+
+  overflow: hidden;
+  bottom: 0;
+  margin-top: 1rem;
+}
+
+footer > p {
+  text-align: center;
 }
