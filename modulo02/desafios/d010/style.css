@@ -19,7 +19,7 @@ header > h1, header > p{
 }
 
 nav {
-  margin-top: 2rem;
+  padding-top: 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -92,7 +92,7 @@ h3 {
   border-radius: 0.625rem 0.625rem 0 0;
 }
 
-section#extra{
+aside{
   background-color: #96C4EA;
 
   margin: 2rem;
