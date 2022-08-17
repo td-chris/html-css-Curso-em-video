@@ -1,20 +1,45 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Android';
+  src: url(fontes/idroid.otf) format('opentype');
+  font-weight: normal;
+}
+
+:root {
+  --color0: #fff;
+  --color1: #96C4EA;
+  --color2: #234866;
+  --color3: #4A5C6B;
+  --color4: #4EA1E6;
+  --color5: #000;
+
+  --default-font: Arial, Verdana, Helvetica, sans-serif;
+  --highlight-font: 'Bebas Neue', cursive;
+  --android-font: 'Android', cursive;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #96C4EA;
+  font-family: var(--default-font);
+  background-color: var(--color1);
 }
 
 header {
-  background-image: linear-gradient(180deg, #234866, #4A5C6B);
+  background-image: linear-gradient(180deg, var(--color2), var(--color3));
 
   overflow: hidden;
   top: 0;
 }
 
+header > h1 {
+  font-family: var(--highlight-font);
+}
+
 header > h1, header > p{
-  color: white;
+  color: var(--color0);
   text-align: center;
 }
 
@@ -24,17 +49,17 @@ nav {
 }
 
 nav > a {
-  color: white;
+  color: var(--color0);
   text-decoration: none;
   margin-left: 0.5rem;
 }
 
 nav > a:hover {
-  background-color: #4EA1E6;
+  background-color: var(--color4);
 }
 
 main {
-  background-color: white;
+  background-color: var(--color0);
   border-radius: 0 0 0.625rem 0.625rem;
 
   margin: auto;
@@ -44,14 +69,15 @@ main {
 }
 
 h1 {
-  color: #234866;
+  color: var(--color3);
   font-size: 2rem;
 }
 
 h2 {
-  background-color: #234866;
-  color: #96C4EA;
+  background-color: var(--color2);
+  color: var(--color1);
   padding-left: 00.625rem;
+  font-family: var(--android-font);
 }
 
 p {
@@ -62,11 +88,19 @@ p {
 p > a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: var(--color5);
 }
 
 p > a::after {
   content: ' 🔗';
+}
+
+p > a#github {
+  color: var(--color0);
+}
+
+p > a#github::after {
+  content: '';
 }
 
 div.center {
@@ -80,20 +114,20 @@ ul {
 
 li > a {
   text-decoration: underline;
-  color: black;
+  color: var(--color5);
 }
 
 h3 {
   padding-top: 0.625rem;
-  background-color: #234866;
-  color: white;
+  background-color: var(--color2);
+  color: var(--color0);
   
   padding-left: 0.625rem;
   border-radius: 0.625rem 0.625rem 0 0;
 }
 
 aside{
-  background-color: #96C4EA;
+  background-color: var(--color1);
 
   margin: 2rem;
   border-radius: 0.625rem;
@@ -104,8 +138,8 @@ section#extra-content{
 }
 
 footer {
-  background-color: #234866;
-  color: white;
+  background-color: var(--color2);
+  color: var(--color0);
 
   overflow: hidden;
   bottom: 0;
