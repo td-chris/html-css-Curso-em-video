@@ -21,41 +21,67 @@
   --android-font: 'Android', cursive;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: var(--default-font);
   background-color: var(--color1);
 }
 
-header {
-  background-image: linear-gradient(180deg, var(--color2), var(--color3));
+div#header-bg{
+  background-image: linear-gradient(to bottom, var(--color2), var(--color3));
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.432);
+}
 
+header {
   overflow: hidden;
   top: 0;
+
+  min-height: 9.375rem;
+  padding-top: 1.875rem;
 }
 
 header > h1 {
   font-family: var(--highlight-font);
+  font-size: 3em;
+  
+}
+
+header > p {
+  font-size: 1.2em;
+  max-width: 37.5rem;
+  margin: auto;
+  text-indent: 0;
 }
 
 header > h1, header > p{
   color: var(--color0);
   text-align: center;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
 }
 
 nav {
   padding-top: 2rem;
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.3125rem;
+  margin-left: 0.5rem;
 }
 
 nav > a {
   color: var(--color0);
   text-decoration: none;
-  margin-left: 0.5rem;
+
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  transition: 0.5s;
 }
 
 nav > a:hover {
   background-color: var(--color4);
+  color: var(--color2);
 }
 
 main {
@@ -63,9 +89,11 @@ main {
   border-radius: 0 0 0.625rem 0.625rem;
 
   margin: auto;
-  width: 50rem;
+  max-width: 20rem;
+  max-width: 50rem;
 
   padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
 }
 
 h1 {
@@ -103,9 +131,14 @@ p > a#github::after {
   content: '';
 }
 
-div.center {
-  display: flex;
-  justify-content: center;
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+img#pequena {
+  width: 50%;
 }
 
 ul {
